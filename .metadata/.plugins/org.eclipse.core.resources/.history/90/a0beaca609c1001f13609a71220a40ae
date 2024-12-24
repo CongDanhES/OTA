@@ -1,0 +1,12 @@
+/*
+ * queue.c
+ *
+ *  Created on: Dec 23, 2024
+ *      Author: NCPC
+ */
+
+#include "queue.h"
+
+void Queue_Init(OTA_Queue *queue){}
+void Queue_Enqueue(OTA_Queue *queue, uint8_t data){}
+void Queue_Dequeue(OTA_Queue *queue, uint8_t *data){}

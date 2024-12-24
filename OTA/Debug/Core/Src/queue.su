@@ -1,0 +1,5 @@
+../Core/Src/queue.c:13:6:Queue_IsEmpty	16	static
+../Core/Src/queue.c:20:6:Queue_IsFull	16	static
+../Core/Src/queue.c:27:6:Queue_Init	16	static
+../Core/Src/queue.c:36:6:Queue_Enqueue	16	static
+../Core/Src/queue.c:49:6:Queue_Dequeue	16	static

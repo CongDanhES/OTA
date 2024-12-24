@@ -1,0 +1,23 @@
+15:56:36 **** Incremental Build of configuration Debug for project OTA ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/queue.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/queue.d" -MT"Core/Src/queue.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/queue.o"
+arm-none-eabi-gcc -o "OTA.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\NCPC\Desktop\Danh\OTA\OTA\STM32F407VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OTA.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OTA.elf
+ 
+arm-none-eabi-size   OTA.elf 
+arm-none-eabi-objdump -h -S  OTA.elf  > "OTA.list"
+arm-none-eabi-objcopy  -O ihex  OTA.elf  "OTA.hex"
+   text	   data	    bss	    dec	    hex	filename
+  10292	     20	   1636	  11948	   2eac	OTA.elf
+arm-none-eabi-objcopy  -O binary  OTA.elf  "OTA.bin"
+Finished building: default.size.stdout
+ 
+Finished building: OTA.hex
+Finished building: OTA.bin
+ 
+ 
+Finished building: OTA.list
+ 
+
+15:56:37 Build Finished. 0 errors, 0 warnings. (took 409ms)
+

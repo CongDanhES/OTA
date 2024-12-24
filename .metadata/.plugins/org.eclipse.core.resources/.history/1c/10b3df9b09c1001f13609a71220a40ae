@@ -1,0 +1,20 @@
+/*
+ * queue.c
+ *
+ *  Created on: Dec 23, 2024
+ *      Author: NCPC
+ */
+
+#include "queue.h"
+
+void Queue_Init(){
+
+}
+
+void Queue_Enqueue(){
+
+}
+
+void Queue_Dequeue(){
+
+}

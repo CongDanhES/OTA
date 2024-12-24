@@ -1,0 +1,18 @@
+/*
+ * queue.h
+ *
+ *  Created on: Dec 23, 2024
+ *      Author: NCPC
+ */
+
+#ifndef INC_QUEUE_H_
+#define INC_QUEUE_H_
+
+typedef struct{
+	uint8_t buffer[QUEUE_SIZE];
+	uint16_t head;
+	uint16_t tail;
+
+}OTA_Queue;
+
+#endif /* INC_QUEUE_H_ */

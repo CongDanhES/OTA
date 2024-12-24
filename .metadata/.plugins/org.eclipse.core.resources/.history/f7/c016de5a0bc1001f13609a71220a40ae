@@ -1,0 +1,47 @@
+/*
+ * queue.c
+ *
+ *  Created on: Dec 23, 2024
+ *      Author: NCPC
+ */
+
+#include "queue.h"
+
+/*
+ * Queue empty
+ * */
+bool Queue_IsEmpty(OTA_Queue *queue){
+	return (queue->count == QUEUE_SIZE);
+}
+
+/*
+ * Queue full
+ * */
+bool Queue_IsFull(OTA_Queue*queue){
+	return (queue->count == 0);
+}
+
+/*
+ * Queue Init
+ * */
+void Queue_Init(OTA_Queue *queue){
+	queue->count = 0;
+	queue->head = 0;
+	queue->tail = 0;
+}
+
+/*
+ * Queue Enqueue
+ * */
+void Queue_Enqueue(OTA_Queue *queue, uint8_t data){
+
+
+}
+
+/*
+ * Queue Dequeue
+ * */
+void Queue_Dequeue(OTA_Queue *queue, uint8_t *data){
+
+
+}
